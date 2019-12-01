@@ -35,8 +35,7 @@ client.on('error', err => { throw err; });
 
 
 app.get('/',(request,response)=>{
-  const url=`https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.MOV_API}&language=en-US&page=1
-`
+  const url=`https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.MOV_API}&language=en-US&page=1`
 return superagent(url)
 .then(data=>{
   // console.log('data : ', data);
