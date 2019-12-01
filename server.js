@@ -32,11 +32,46 @@ client.on('error', err => { throw err; });
 
 
 // routes 
+app.get('/',(request,response)=>{
+  response.send('helllllllo')
+})
 
+app.post('/',(request,response)=>{
+
+  const url=`https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.MOV_API}&language=en-US&page=1`
+  return superagent(url)
+    .then( data => {
+      console.log('dataaaaa : ', data);
+    let movies = data.body.results;
+    console.log(' moviesssssssssssss : ',movies );
+    //  movies.map( (movi) => {
+    // return new Movie(movi);
+  
+    // });
+    
+    response.render('../views/index',{data:movies})  
+  })
+  
+  
+  
+})
 
 
 // functions handlers 
 
+
+
+
+function Movie(movi){
+
+  this.title=movi.title;
+  this.poster_path=`https://image.tmdb.org/t/p/w500/${movi.poster_path}`;
+  this.overview=movi.overview;
+  this.popularity=movi.popularity;
+  this.vote_average=movi.vote_average;
+  this.release_date=movi.release_date;
+
+}
 
 
 // error functions handlers
