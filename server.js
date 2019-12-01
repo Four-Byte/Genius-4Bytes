@@ -35,7 +35,7 @@ client.on('error', err => { throw err; });
 
 
 app.get('/',(request,response)=>{
-  const url=`https://api.themoviedb.org/3/movie/top_rated?api_key=57a6b853590432570e83f7520825c046&language=en-US&page=1
+  const url=`https://api.themoviedb.org/3/movie/top_rated?api_key=${process.env.MOV_API}&language=en-US&page=1
 `
 return superagent(url)
 .then(data=>{
@@ -51,13 +51,50 @@ return superagent(url)
 
 // functions handlers 
 
+app.get('/search',(request,response)=>{
+  response.render('../views/pages/search')
+})
 
+app.post('/dosearches',(request,response)=>{
+  let sort =request.body.disc;
+  console.log('sort : ', sort);
+  ;
+  let url;
+  let d = new Date();
+  let year=d.getFullYear()
+ if(sort === 'popularity') {url=`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOV_API}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`}
+ if(sort === 'revenue'){url=`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOV_API}&language=en-US&sort_by=revenue.desc.desc&include_adult=false&include_video=false&page=1&primary_release_year=${year}`}
+
+ superagent(url)
+ .then(data=>{
+  let movie=data.body.results;
+  let movi= movie.map(val=>{
+   return new Movie(val);
+  })
+  // console.log('movie : ', movie);
+  response.render('../views/pages/result',{data:movi})
+})
+});
+
+app.post('/searchbox',(request,response)=>{
+  let text=request.body.box;
+  let url=`https://api.themoviedb.org/3/search/movie?api_key=57a6b853590432570e83f7520825c046&query=${text}`
+  superagent(url)
+  .then(data=>{
+    let movie=data.body.results;
+    let movi= movie.map(val=>{
+     return new Movie(val);
+    })
+    // console.log('movie : ', movie);
+    response.render('../views/pages/result',{data:movi})
+  })
+  });
 
 
 function Movie(movi){
 
   this.title=movi.title;
-  this.poster_path= `https://image.tmdb.org/t/p/w500${movi.poster_path}`;
+  this.poster_path= `https://image.tmdb.org/t/p/w500${movi.poster_path}`||'not avalible';
   this.overview=movi.overview;
   this.popularity=movi.popularity;
   this.vote_average=movi.vote_average;

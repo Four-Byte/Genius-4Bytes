@@ -9,9 +9,19 @@
 <body>
     
 
+    <h1>search</h1>
 
+<form action="/dosearches" method="POST">
+    <input type="radio" name="disc" value="popularity"> popularity<br>
+    <input type="radio" name="disc" value="revenue"> Box Office <br>
+    <button>Discover</button>
 
+</form>
 
-    
+<form action="/searchbox" method="POST">
+<input type="text" name="box" placeholder="title">
+<button>Search</button>
+</form>
+
 </body>
 </html>
