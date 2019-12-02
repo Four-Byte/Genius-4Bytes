@@ -118,4 +118,26 @@
 #moviepop,#movievote,#moviedate {
     color: white;
     font-family: 'Bree Serif', serif;
+    opacity:1;
 }
+
+#moviepop:hover {
+    color: rgb(207, 204, 22);
+    opacity:1;
+}
+#movievote:hover {
+    color: rgb(17, 134, 163);
+    opacity:1;
+}
+#moviedate:hover {
+    color: rgb(20, 189, 34);
+    opacity:1;
+}
+
+#movieimg:hover {
+
+        -webkit-transform: scale(0.8);
+        -ms-transform: scale(0.8);
+        transform: scale(0.8);
+}
+

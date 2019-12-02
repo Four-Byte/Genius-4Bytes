@@ -50,7 +50,7 @@
     <%  data.forEach((val)=>{ %>
         <div class="movietopdiv"> 
         <p id="movietitle"> Movie Title : <%= val.title %>  </p>
-        <p id="movieimg"> <img src="<%= val.poster_path %>" > </p>
+        <p id="movieimg"> <img src="<%= val.poster_path %>" width="300" height="300"> </p>
         <p id="moviername"> Movies Review : </p>
         <p id="movieoverview">  <%= val.overview %> </p>
         <p id="moviepop"> Percentage Of popularity : <%= val.popularity %> </p>
