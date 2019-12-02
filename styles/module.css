@@ -78,7 +78,8 @@
 .movietopdiv {
     margin: 20px auto;
     border: 5px solid gray;
-    border-radius: 40%;
+    border-radius: 20%;
+    width: 600px;
 }
 /* Movie title  */
 #movietitle{
@@ -89,6 +90,11 @@
     padding-right: -15px;
     text-shadow: 3px 3px black;
 
+}
+
+#movietitle:hover {
+    opacity: 5;
+    color: magenta;
 }
 
 /* Movie Review name   */
@@ -110,7 +116,7 @@
     text-overflow: ellipsis; 
     border: 2px solid gray;
     border-radius:15px ;
-    margin-left: 470px;
+    margin-left: 90px;
     font-family: 'Calistoga', cursive;
 }
 
