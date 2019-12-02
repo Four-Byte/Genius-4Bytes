@@ -14,6 +14,10 @@ app.use( express.static('./public/../') );
 app.set('view engine' ,'ejs')
 
 
+// About us page 
+app.get('/aboutus',(request,response)=>{
+  response.render('../aboutus')
+})
 
 // Middleware to handle PUT and DELETE
 app.use(methodOverride((request, response) => {

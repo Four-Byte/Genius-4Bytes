@@ -19,3 +19,20 @@ body h1 {
     margin: 0px auto;
     padding: 20px;
 }
+
+footer{
+    text-align: center;
+    font-size: x-large;
+    border: 0.5px solid rgb(197, 11, 11);
+    border-radius: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;;
+    display: block;
+    min-height: 50px;
+    padding-top: 10px;
+    position: relative;
+    text-shadow: 3px 3px maroon;
+    width: 1400px;
+    position: absolute;
+     right: -40px;
+  }
