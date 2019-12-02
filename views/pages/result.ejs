@@ -11,19 +11,32 @@
 
 
     <%  data.forEach((val)=>{ %>
-        <div> <ul>
-        <li> <%= val.title %> </li>
-        <li> <img src="<%= val.poster_path %>" > </li>
-        <li> <%= val.overview %> </li>
-        <li><%= val.popularity %> </li>
-        <li> <%= val.vote_average %> </li>
-        <li> <%= val.release_date%></li>
-     </ul></div>
+        <div> <ul><li>
+        <p>Title: <%= val.title %> </p>
+        <p> <img src="<%= val.poster_path %>" > </p>
+        <p>Overview: <%= val.overview %> </p>
+        
+    </li></ul></div>
+    <div>
+        <p>
+            <form action="/selectMovie" method="POST">
+                <button>SELECT THIS MOVIE</button>
+                <textarea name="title" cols="30" rows="10" ><%= val.title %></textarea>
+                <input type="hidden" name="poster_path" value=<%= val.poster_path %>>
+                <textarea name="overview"cols="30" rows="10" ><%= val.overview %></textarea>
+                <input type="hidden" name="popularity" value=<%= val.popularity %>>
+                <input type="hidden" name="vote_average" value=<%= val.vote_average %>>
+                <input type="hidden" name="release_date" value=<%= val.release_date %>>
+
+            </form>     
+        </p>
+    </div>
    
     <% })    %>
 
 
 
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

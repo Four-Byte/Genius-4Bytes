@@ -7,21 +7,27 @@
     <title>search</title>
 </head>
 <body>
+    <h1>Discover movies</h1>
+
     
-
-    <h1>search</h1>
-
+<div><p>Disscover The:</p>
 <form action="/dosearches" method="POST">
-    <input type="radio" name="disc" value="popularity"> popularity<br>
+    <input type="radio" name="disc" value="popularity"> Most Popular<br>
     <input type="radio" name="disc" value="revenue"> Box Office <br>
+    <input type="text" name="year" placeholder="Release date (optional)">
     <button>Discover</button>
 
 </form>
+</div>
 
+<div><p>Search by title:</p>
 <form action="/searchbox" method="POST">
-<input type="text" name="box" placeholder="title">
+<input type="text" name="box" placeholder="Title">
 <button>Search</button>
 </form>
+</div>
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>

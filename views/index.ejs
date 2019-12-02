@@ -8,23 +8,28 @@
     <h1>top rated</h1>
 
     <nav>
-        <ul>
-            <li><a href="/search">search</a></li>
-        </ul>
+      <form action="/search">
+        <button>Search</button>
+      </form>
+      <form action="/show">
+        <button>MyFavorit</button>
+      </form>
     </nav>
 
     <%  data.forEach((val)=>{ %>
-        <div> <ul>
-        <li> <%= val.title %> </li>
-        <li> <img src="<%= val.poster_path %>" > </li>
-        <li> <%= val.overview %> </li>
-        <li><%= val.popularity %> </li>
-        <li> <%= val.vote_average %> </li>
-        <li> <%= val.release_date%></li>
-     </ul></div>
+        <div> <ul><li>
+        <p> <%= val.title %> </p>
+        <p> <img src="<%= val.poster_path %>" > </p>
+        <p> <%= val.overview %> </p>
+        <p><%= val.popularity %> </p>
+        <p> <%= val.vote_average %> </p>
+        <p> <%= val.release_date%></p>
+    </li></ul></div>
    
     <% })    %>
 
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
