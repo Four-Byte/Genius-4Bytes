@@ -3,7 +3,7 @@
 <head>
  
     <title>Movies</title>
-    <link rel="stylesheet" href="../styles/reset.css">
+    <!-- <link rel="stylesheet" href="../styles/reset.css"> -->
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/module.css">
     <link rel="stylesheet" href="../styles/layout.css">
@@ -11,17 +11,36 @@
 
 </head>
 <body>
-    <h1>top rated</h1>
+    <h1>Genius 4-Bytes Movies App </h1>
+
+    <!-- <img id="logoimage" src="../styles/images/Genius-bytes-logo.jpg" alt="logoimage"> -->
+    <nav>
+      <ul class="navigation">
+          <li class="nav">
+              <a href="/" id="currentlink"> Home Page</a>
+          </li>
+          <li class="nav">
+              <a href="/search">Search Page </a>
+          </li>
+          <li class="nav">
+              <a href="/show"> Favorite Movies</a>
+          </li>
+          <li class="nav">
+              <a href="About-Us.html">About Us </a>
+          </li>
+      </ul>
+  </nav>
 
     <nav>
       <form action="/search">
-        <button>Search</button>
+        <button id="searchbutton">Search</button>
       </form>
       <form action="/show">
-        <button>MyFavorit</button>
+        <button id="favbutton">The favorite list </button>
       </form>
     </nav>
 
+    <h2> Top Rated Movies </h2>
     <%  data.forEach((val)=>{ %>
         <div> <ul><li>
         <p> <%= val.title %> </p>

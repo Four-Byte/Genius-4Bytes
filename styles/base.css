@@ -1,0 +1,22 @@
+/* The body  */
+body {
+    margin: 0px auto;
+    background-color: rgb(45, 45, 185);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('../styles/images/Genius-bytes-logo.jpg');
+    background-size: cover;
+}
+
+/* body header  */
+body h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px rgb(197, 8, 39);
+    position: relative;
+    background-image: url('../styles/images/Genius-bytes-logo.jpg');
+    background-position: inherit;
+    border: 3px solid black;
+    border-radius: 5px ;
+    margin: 0px auto;
+    padding: 20px;
+}

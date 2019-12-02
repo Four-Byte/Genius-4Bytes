@@ -1,0 +1,14 @@
+/* Our Project Logo */
+#logoimage {
+    height: 200px;
+    width: 960px;
+    margin-left: 200px;    
+    text-align: center;
+} 
+
+/* Search Button on homepage  */
+#searchbutton , #favbutton{
+    float: left;
+    padding : 20px ;
+    margin: 20px auto;
+}
