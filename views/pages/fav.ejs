@@ -7,11 +7,43 @@
     <title>fav</title>
 </head>
 <body>
+
+        <nav><form action="/">
+            <button>Home Page</button></form></nav>
     
-
-
-
+    <%  data.forEach((val)=>{ %>
+        <div> <ul><li>
+        <p>Title: <%= val.title %> </p>
+        <p> <img src="<%= val.poster_path %>" > </p>
+        <p>Overview: <%= val.overview %> </p>
+        
+    </li></ul></div>
+    <div>
+        <p>
+            <form action="/edit/<%- val.id %>" method="POST">
+                
+                <input type="hidden"  value="put" name="_method">
+                <textarea name="title" cols="30" rows="10" ><%= val.title %></textarea>
+                <input type="hidden" name="poster_path" value=<%= val.poster_path %>>
+                <textarea name="overview"cols="30" rows="10" ><%= val.overview %></textarea>
+                <input type="text" name="popularity" value=<%= val.popularity %>>
+                <input type="text" name="vote_average" value=<%= val.vote_average %>>
+                <input type="text" name="release_date" value=<%= val.release_date %>>
+                <button>Edit this item</button>
+            </form>     
+        </p>
+    </div>
+   
+    <div>
+        <form action="/delete/<%- val.id %>" method="POST">
+            <input type="hidden"  value="delete" name="_method">
+            <button>Delete from MyFavorit</button>
+        </form>
+    </div>
+    <% })    %>
 
     
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>

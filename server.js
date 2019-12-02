@@ -56,18 +56,23 @@ app.get('/search',(request,response)=>{
 
 app.post('/dosearches',(request,response)=>{
   let sort =request.body.disc;
+  let releaseYear=request.body.year;
+  console.log('releaseYear : ', releaseYear);
   console.log('sort : ', sort);
   ;
   let url;
-  let d = new Date();
-  let year=d.getFullYear()
- if(sort === 'popularity') {url=`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOV_API}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`}
- if(sort === 'revenue'){url=`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOV_API}&language=en-US&sort_by=revenue.desc.desc&include_adult=false&include_video=false&page=1&primary_release_year=${year}`}
-
- superagent(url)
+  
+ if(sort === 'popularity') {url=`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOV_API}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`};
+ if(sort === 'revenue'){url=`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOV_API}&language=en-US&sort_by=revenue.desc.desc&include_adult=false&include_video=false&page=1`};
+if(releaseYear){url+=`&primary_release_year=${releaseYear}`};
+console.log('releaseYear : ', releaseYear);
+console.log('url : ', url);
+  superagent(url)
  .then(data=>{
-  let movie=data.body.results;
+   let movie=data.body.results;
+   console.log('movie : ', movie);
   let movi= movie.map(val=>{
+    console.log('val : ', val);
    return new Movie(val);
   })
   // console.log('movie : ', movie);
@@ -89,6 +94,46 @@ app.post('/searchbox',(request,response)=>{
   })
   });
 
+  app.post('/selectMovie',(request,response)=>{
+    
+    console.log('request.body : ', request.body);
+    response.render('../views/pages/details', {data:request.body})
+  })
+  
+  app.get('/show',(request,response)=>{
+    let SQL= 'SELECT * FROM movies';
+    client.query(SQL)
+    .then(results => response.render('../views/pages/fav', { data: results.rows }))
+    .catch(err=>errorHandler(err,response));
+  })
+
+  app.post('/add',(request,response)=>{
+    let {title,poster_path,overview,popularity,vote_average,release_date}=request.body;
+    let values=[title,poster_path,overview,popularity,vote_average,release_date];
+    const SQL = 'INSERT INTO movies(title,poster_path,overview,popularity,vote_average,release_date) VALUES ($1, $2, $3, $4, $5 ,$6);';
+    return client.query(SQL, values)
+    .then(response.redirect('/show'))
+    .catch(err => errorHandler(err, response));
+  
+  })
+
+  app.put('/edit/:movie_id',(request,response)=>{
+
+    let {title,poster_path,overview,popularity,vote_average,release_date}=request.body;
+    let values=[title,poster_path,overview,popularity,vote_average,release_date,request.params.movie_id]
+    let SQL ='UPDATE movies SET title=$1, poster_path=$2, overview=$3, popularity=$4, vote_average=$5, release_date=$6 WHERE id=$7 ;';
+    return client.query(SQL,values)
+    .then(response.redirect('/show'))
+    .catch(err=>errorHandler(err));
+  })
+
+  app.delete('/delete/:movie_id',(request,response)=>{
+    let val=[request.params.movie_id];
+    let SQL='DELETE FROM movies WHERE id=$1 ;'
+    return client.query(SQL,val)
+    .then(response.redirect('/show'))
+    .catch(err=>errorHandler(err));
+  })
 
 function Movie(movi){
 
@@ -103,11 +148,11 @@ function Movie(movi){
 
 
 // error functions handlers
-function notFound(req,res){
-    res.status(404).send('NOT FOUND!!!');
+function notFound(request,response){
+  response.status(404).send('NOT FOUND!!!');
   }
-  function errorHandler(error,req,res){
-    res.status(500).send(error);
+  function errorHandler(error,request,response){
+    response.status(500).send(error);
   }
 
 
