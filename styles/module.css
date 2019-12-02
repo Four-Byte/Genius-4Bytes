@@ -22,6 +22,7 @@
  /* text inside  */
  nav a {
      color: maroon;
+     text-decoration: none;
  }
  
 /*  Buttons on homepage  */
@@ -60,6 +61,7 @@
     text-align: center;
 }
 
+/* top rated movie header  */
 .topratedmovies h2 { 
     color: black;
     /* font-family: 'Lobster', cursive; */
@@ -72,3 +74,48 @@
     border-width: thin medium thick;
 }
 
+
+.movietopdiv {
+    margin: 20px auto;
+    border: 5px solid gray;
+    border-radius: 40%;
+}
+/* Movie title  */
+#movietitle{
+    font-family: 'Abril Fatface', cursive;
+    font-size: large;
+    color: white;
+    margin: 0px auto;
+    padding-right: -15px;
+    text-shadow: 3px 3px black;
+
+}
+
+/* Movie Review name   */
+#moviername {
+    color: #ffffff;
+    text-decoration:underline;
+    font-family: 'Bree Serif', serif;
+    font-size: larger;
+}
+
+/* Movie review info  */
+#movieoverview {
+    color: white;
+    text-align: center;
+    white-space: initial; 
+    width: 400px; 
+    height: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+    border: 2px solid gray;
+    border-radius:15px ;
+    margin-left: 470px;
+    font-family: 'Calistoga', cursive;
+}
+
+/* Movie popularity , voting rate , release date   */
+#moviepop,#movievote,#moviedate {
+    color: white;
+    font-family: 'Bree Serif', serif;
+}
