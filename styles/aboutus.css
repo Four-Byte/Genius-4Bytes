@@ -1,3 +1,4 @@
+/* body of about us page  */
 body{
     background-image: url('../styles/images/Genius-bytes-logo.jpg');
     background-repeat: no-repeat;
@@ -6,9 +7,24 @@ body{
    
  } 
 
+ /* body header */
+ body h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px rgb(197, 8, 39);
+    position: relative;
+    background-image: url('../styles/images/Genius-bytes-logo.jpg');
+    background-position: inherit;
+    border: 3px solid black;
+    border-radius: 5px ;
+    margin: 0px auto;
+    padding: 20px;
+}
+
+/* Footer */
 footer{
    text-align: center;
-   font-size: x-large;
+   font-size: xx-large;
    border: 0.5px solid rgb(197, 11, 11);
    border-radius: 20px;
    color: white;
@@ -21,6 +37,7 @@ footer{
    width: 1400px;
    position: absolute;
     right: -40px;
+    background-color: rgb(255, 102, 0);
  }
 
  fieldset{
@@ -41,14 +58,18 @@ footer{
    background-attachment: fixed;
    background-size: cover;
  }
+
+ /* header 2  */
  h2{
     text-align: center;
     font-size: x-large;
     color: rgb(255, 255, 255);
-    text-shadow:3PX 3px maroon;
-    font-family: cursive;
+    text-shadow:3PX 3px rgb(223, 28, 174);
+    font-family: sans-serif;
        
  }
+
+ /* Team emails and social media names  */
  section{
    text-align: center;
    border: 0.1px solid black;
@@ -60,16 +81,20 @@ footer{
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;
-   color: blanchedalmond;
+   color: rgb(39, 26, 3);
+   font-weight: bolder;
  }
+
+ /* team section  */
 .container {
     display: inline-block;
     font-family: Arial;
     width: 24.5%;
  }
 
+ /* team work images */
  .container img {
-    border-radius: 90%;
+    border-radius: 20%;
  } 
  .text-block {
    position: absolute;
