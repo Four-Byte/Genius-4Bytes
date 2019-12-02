@@ -18,7 +18,7 @@ body{
     border: 3px solid black;
     border-radius: 5px ;
     margin: 0px auto;
-    margin-left: 70px;
+    /* margin-left: 30px; */
     padding: 20px;
 }
 
@@ -35,10 +35,11 @@ footer{
    padding-top: 10px;
    position: relative;
    text-shadow: 3px 3px maroon;
-   width: 1400px;
+   width: 1330px;
    position: absolute;
-    right: -40px;
+    right: 10px;
     background-color: rgb(66, 1, 10);
+    margin: 0px auto;
  }
 
  fieldset{
@@ -140,6 +141,7 @@ footer{
 #blu{
    color: darkcyan;
    font-weight: bolder;
+   font-size: small;
 }
 #tag{
    color: darkcyan;
