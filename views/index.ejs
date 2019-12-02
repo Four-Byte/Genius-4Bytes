@@ -31,14 +31,19 @@
       </ul>
   </nav>
 
+  <div id="buttons">
     <nav>
       <form action="/search">
-        <button id="searchbutton">Search</button>
+        <button id="searchbutton">Search API Movies</button>
       </form>
       <form action="/show">
         <button id="favbutton">The favorite list </button>
       </form>
     </nav>
+  </div>
+    
+
+  <div class="topratedmovies">
 
     <h2> Top Rated Movies </h2>
     <%  data.forEach((val)=>{ %>
@@ -53,7 +58,8 @@
    
     <% })    %>
 
-    
+  </div>
+ 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>

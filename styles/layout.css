@@ -1,0 +1,15 @@
+/* navigation list  */
+.nav {
+    display: inline-block;
+    color: white;
+    background-color: white;
+    border: 2px rgb(156, 11, 11) solid;
+    border-radius: 30px;
+    width: 125px;
+    text-align: center;
+    padding: 10px;
+    position: relative;
+    left: -3.5px;
+    box-shadow: 1px 1px 1px black;
+    font-family: fantasy;
+ }
