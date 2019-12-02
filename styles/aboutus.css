@@ -18,6 +18,7 @@ body{
     border: 3px solid black;
     border-radius: 5px ;
     margin: 0px auto;
+    margin-left: 70px;
     padding: 20px;
 }
 
@@ -37,7 +38,7 @@ footer{
    width: 1400px;
    position: absolute;
     right: -40px;
-    background-color: rgb(255, 102, 0);
+    background-color: rgb(66, 1, 10);
  }
 
  fieldset{
@@ -73,10 +74,10 @@ footer{
  section{
    text-align: center;
    border: 0.1px solid black;
-   border-radius: 2px;
+   border-radius: 20px;
    position: relative;
    left: 212px;
-   width: 870px;
+   width: 901px;
    background-image: url("images/7039.jpg");
    background-repeat: no-repeat;
    background-attachment: fixed;
