@@ -25,7 +25,7 @@
  }
  
 /*  Buttons on homepage  */
- #buttons {
+ .buttons {
     text-align: center;
     border-bottom: 10px solid white;
     cursor: pointer;
@@ -55,6 +55,20 @@
     box-shadow: 0 12px 16px 0 rgba(62, 218, 197, 0.2),0 17px 50px 0 white;
   }
 
-/* .topratedmovies {
-    float: left;
-} */
+  /* Top rated movies  */
+.topratedmovies {
+    text-align: center;
+}
+
+.topratedmovies h2 { 
+    color: black;
+    /* font-family: 'Lobster', cursive; */
+    font-family: 'Pacifico', cursive;
+    text-shadow: 3px 3px rgb(223, 208, 211);
+    font-size: xx-large;
+    margin: 20px auto;
+    border-bottom: 10px solid black;
+    padding-bottom: 20px;
+    border-width: thin medium thick;
+}
+

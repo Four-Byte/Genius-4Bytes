@@ -8,7 +8,8 @@
     <link rel="stylesheet" href="../styles/module.css">
     <link rel="stylesheet" href="../styles/layout.css">
 
-
+    <link href="https://fonts.googleapis.com/css?family=Lobster|Pacifico&display=swap" rel="stylesheet">
+        
 </head>
 <body>
     <h1>Genius 4-Bytes Movies App </h1>
@@ -31,7 +32,7 @@
       </ul>
   </nav>
 
-  <div id="buttons">
+  <div class="buttons">
     <nav>
       <form action="/search">
         <button id="searchbutton">Search API Movies</button>
@@ -44,17 +45,16 @@
     
 
   <div class="topratedmovies">
-
     <h2> Top Rated Movies </h2>
     <%  data.forEach((val)=>{ %>
-        <div> <ul><li>
-        <p> <%= val.title %> </p>
-        <p> <img src="<%= val.poster_path %>" > </p>
-        <p> <%= val.overview %> </p>
-        <p><%= val.popularity %> </p>
-        <p> <%= val.vote_average %> </p>
-        <p> <%= val.release_date%></p>
-    </li></ul></div>
+        <div> 
+        <p id="movietitle"> Movie Title : <%= val.title %>  </p>
+        <p id="movieimg"> <img src="<%= val.poster_path %>" > </p>
+        <p id="movieoverview"> Movies Review : <%= val.overview %> </p>
+        <p id="moviepop"> Percentage Of popularity : <%= val.popularity %> </p>
+        <p id="movievote"> Averge Vote :  <%= val.vote_average %> </p>
+        <p id="moviedate"> Release Date :  <%= val.release_date%></p>
+    </div> <br><br>
    
     <% })    %>
 
