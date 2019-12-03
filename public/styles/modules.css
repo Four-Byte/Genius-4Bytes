@@ -104,6 +104,7 @@ ul{
     /* float: left; */
     margin-top: 20px;
     margin-left:15px;
+    padding-top: 10px;
 }
 #pTwo{
     font-size:20px;
@@ -119,14 +120,17 @@ ul{
 #pThree{
     font-size:15px;
     text-align: left;
+    padding-left: 10px;
 }
 #pFour{
     font-size:15px;
     text-align: left;
+    padding-left: 10px;
 }
 #pFive{
     font-size:15px;
    text-align: left;
+   padding-left: 10px;
 }
 #divTwo{
     text-align: left;
@@ -324,7 +328,7 @@ ul{
     /* float: left; */
     margin-top: 20px;
     margin-left:15px;
-
+    padding-top: 10px;
     
 }
 #pTwo-disc{
@@ -341,17 +345,18 @@ ul{
 #pThree-disc{
     font-size:15px;
     text-align: left;
+    padding-left: 10px;
    
 }
 #pFour-disc{
     font-size:15px;
     text-align: left;
-   
+    padding-left: 10px;
 }
 #pFive-disc{
     font-size:15px;
    text-align: left;
-   
+   padding-left: 10px;
 }
 #divTwo-disc{
     text-align: left;
@@ -395,4 +400,22 @@ border-radius: 20px;
 	position:relative;
 	top:1px;
 }
+
+/* Footer */
+footer{
+   text-align: center;
+   font-size: xx-large;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;;
+   display: block;
+   min-height: 50px;
+   padding-top: 10px;
+   text-shadow: 3px 3px maroon;
+   width: 100%;
+   position: absolute;
+    right: 1px;
+    background-color: rgb(66, 1, 10);
+    margin: 0px auto;
+ }
+
 

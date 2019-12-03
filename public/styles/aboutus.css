@@ -1,10 +1,10 @@
 /* body of about us page  */
 body{
-    background-image: url('../styles/images/Genius-bytes-logo.jpg');
+    /* background-image: url('/pics/Genius-bytes-logo.jpg'); */
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-   
+    background-color: black;
  } 
 
  /* body header */
@@ -13,7 +13,7 @@ body{
     text-align: center;
     text-shadow: 3px 3px rgb(197, 8, 39);
     position: relative;
-    background-image: url('../styles/images/Genius-bytes-logo.jpg');
+    background-image: url('pics/');
     background-position: inherit;
     border: 3px solid black;
     border-radius: 5px ;
@@ -23,32 +23,37 @@ body{
 }
 
 /* Home page nav  */
-#listThree-aboutus{
+#aboutus-homepage  {
     list-style-type: none;
     display:inline-block;
     position: absolute;
-  top: 8px;
-  left: 3px;
-  font-size: 25px;
+    top: 8px;
+     left: 21px;
+    font-size: 25px;
+}
+
+#aboutus-homepage  a {
+    color : maroon;
+}
+
+#aboutus-homepage  :hover {
+    color: aqua;
 }
 /* Footer */
 footer{
-   text-align: center;
-   font-size: xx-large;
-   border: 0.5px solid rgb(197, 11, 11);
-   border-radius: 20px;
-   color: white;
-   font-family: Arial, Helvetica, sans-serif;;
-   display: block;
-   min-height: 50px;
-   padding-top: 10px;
-   position: relative;
-   text-shadow: 3px 3px maroon;
-   width: 1330px;
-   position: absolute;
-    right: 10px;
-    background-color: rgb(66, 1, 10);
-    margin: 0px auto;
+    text-align: center;
+    font-size: xx-large;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;;
+    display: block;
+    min-height: 50px;
+    padding-top: 10px;
+    text-shadow: 3px 3px maroon;
+    width: 100%;
+    position: absolute;
+     right: 1px;
+     background-color: rgb(66, 1, 10);
+     margin: 0px auto;
  }
 
  fieldset{
@@ -57,7 +62,7 @@ footer{
    font-size:x-large ;
    border: 0.5px solid rgb(255, 255, 255);
    border-radius: 20px;
-   color: black;
+   color: white;
    font: bolder;
    font-family: monospace;
    display: block;
@@ -65,7 +70,7 @@ footer{
    left: 212px;
    width: 870px;
    background-repeat: no-repeat, repeat;
-   background-image: url("images/7039.jpg");
+   background-image: url("/pics/pexel.jpeg");
    background-attachment: fixed;
    background-size: cover;
  }
@@ -75,7 +80,7 @@ footer{
     text-align: center;
     font-size: x-large;
     color: rgb(255, 255, 255);
-    text-shadow:3PX 3px rgb(223, 28, 174);
+    text-shadow:3PX 3px maroon;
     font-family: sans-serif;
        
  }
@@ -88,11 +93,11 @@ footer{
    position: relative;
    left: 212px;
    width: 901px;
-   background-image: url("images/7039.jpg");
+   background-image: url("/pics/pexel.jpeg");
    background-repeat: no-repeat;
    background-attachment: fixed;
    background-size: cover;
-   color: rgb(39, 26, 3);
+   color: white;
    font-weight: bolder;
  }
 
@@ -148,11 +153,11 @@ footer{
 
 }
 #blu{
-   color: darkcyan;
+   color: maroon;
    font-weight: bolder;
    font-size: small;
 }
 #tag{
-   color: darkcyan;
+   color: maroon;
    font-weight: bolder;
 }
