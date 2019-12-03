@@ -9,38 +9,81 @@
    <link rel="stylesheet" href="/public/styles/modules.css">
   
 </head>
-<body>
-    
-        <nav><form action="/">
-            <button>Home Page</button></form></nav>
+<body id="mainOne">
+    <main>
 
-
-    <%  data.forEach((val)=>{ %>
-        <div> <ul><li>
-        <p>Title: <%= val.title %> </p>
-        <p> <img src="<%= val.poster_path %>" > </p>
-        <p>Overview: <%= val.overview %> </p>
+            <img id="joker" src="../../pics/shia-lebeouf.png">
+            <div class="top-left">Discover and Watch <br/>MOVIES</div>
+            <p id="quotations">“</p>
+            
+        <nav id="navOne"><ul id="listThree"><li><a href="/">Home Page</a></li></ul> 
         
-    </li></ul></div>
-    <div>
-        <p>
-            <form action="/selectMovie" method="POST">
-                <button>SELECT THIS MOVIE</button>
-                <textarea name="title" cols="30" rows="10" ><%= val.title %></textarea>
-                <input type="hidden" name="poster_path" value=<%= val.poster_path %>>
-                <textarea name="overview"cols="30" rows="10" ><%= val.overview %></textarea>
-                <input type="hidden" name="popularity" value=<%= val.popularity %>>
-                <input type="hidden" name="vote_average" value=<%= val.vote_average %>>
-                <input type="hidden" name="release_date" value=<%= val.release_date %>>
+            <ul id="listOne"><li>
+                    <a href="/search">
+                    Search
+                    </a>
+                   </li>
+                 </ul>
+                 <!-- </form> -->
+                 <!-- <form action="/show"> -->
+                   <ul id="listTwo"><li>
+                       <a href="/show">
+                       My Favorites
+                       </a>
+                      </li>
+                    </ul></nav>
+       
 
-            </form>     
-        </p>
+<div id="allMovies">
+        <%  data.forEach((val)=>{ %>
+            <div> <ul>
+              <li>
+                <div id="divTwo">
+            <p id="pOne"> <%= val.title %> </p>
+            <p id="lines">____________________________________________________________</p>
+            <div id="images">
+            <p> <img id="imageOne" src="<%= val.poster_path %>" > </p>
+          </div>
+          <div id="ps">
+            <p id="pTwo">  <%= val.overview %> </p>
+            <p id="lines">____________________________________________________________</p>
+          
+            <p id="pThree">popularity:<br/><%= val.popularity %> </p>
+          
+          
+            <p id="pFour"> vote average:<br/><%= val.vote_average %> </p>
+          
+          
+            <p id="pFive">release date:<br/> <%= val.release_date%></p>
+
+            <div>
+                    <p>
+                        <form action="/selectMovie" method="POST">
+                            <button>SELECT THIS MOVIE</button>
+                            <textarea name="title" cols="30" rows="10" ><%= val.title %></textarea>
+                            <input type="hidden" name="poster_path" value=<%= val.poster_path %>>
+                            <textarea name="overview"cols="30" rows="10" ><%= val.overview %></textarea>
+                            <input type="hidden" name="popularity" value=<%= val.popularity %>>
+                            <input type="hidden" name="vote_average" value=<%= val.vote_average %>>
+                            <input type="hidden" name="release_date" value=<%= val.release_date %>>
+            
+                        </form>     
+                    </p>
+                </div>
+        </div>
+        </div>
+      
+        </li></ul>
+      
     </div>
+       
+    
+   
    
     <% })    %>
 
-
-
+</div>
+</main>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="app.js"></script>
 </body>
