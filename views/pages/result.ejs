@@ -48,29 +48,29 @@
             <p id="pTwo-disc">  <%= val.overview %> </p>
             <p id="lines-disc">____________________________________________________________</p>
           
-            <p id="pThree-disc">popularity:<br/><%= val.popularity %> </p>
+            <p id="pThree-disc">popularity: <%= val.popularity %>  </p>
           
           
-            <p id="pFour-disc"> vote average:<br/><%= val.vote_average %> </p>
+            <p id="pFour-disc"> vote average: <%= val.vote_average %> </p>
           
           
-            <p id="pFive-disc">release date:<br/> <%= val.release_date%></p>
+            <p id="pFive-disc">release date:  <%= val.release_date%> </p>
+            <form action="/selectMovie" method="POST">
+                <button id="button-disc">SELECT THIS MOVIE</button>
+                <textarea name="title" cols="30" rows="10" ><%= val.title %></textarea>
+                <input type="hidden" name="poster_path" value=<%= val.poster_path %>>
+                <textarea name="overview"cols="30" rows="10" ><%= val.overview %></textarea>
+                <input type="hidden" name="popularity" value=<%= val.popularity %>>
+                <input type="hidden" name="vote_average" value=<%= val.vote_average %>>
+                <input type="hidden" name="release_date" value=<%= val.release_date %>>
+        
+            </form>
 
-            <div>
-                    <p>
-                        <form action="/selectMovie" method="POST">
-                            <button>SELECT THIS MOVIE</button>
-                            <textarea name="title" cols="30" rows="10" ><%= val.title %></textarea>
-                            <input type="hidden" name="poster_path" value=<%= val.poster_path %>>
-                            <textarea name="overview"cols="30" rows="10" ><%= val.overview %></textarea>
-                            <input type="hidden" name="popularity" value=<%= val.popularity %>>
-                            <input type="hidden" name="vote_average" value=<%= val.vote_average %>>
-                            <input type="hidden" name="release_date" value=<%= val.release_date %>>
             
-                        </form>     
-                    </p>
-                </div>
         </div>
+        
+         
+   
         </div>
       
         </li></ul>
@@ -79,7 +79,7 @@
        
     
    
-   
+    
     <% })    %>
 
 </div>

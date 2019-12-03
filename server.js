@@ -70,9 +70,9 @@ console.log('url : ', url);
   superagent(url)
  .then(data=>{
    let movie=data.body.results;
-   console.log('movie : ', movie);
+  //  console.log('movie : ', movie);
   let movi= movie.map(val=>{
-    console.log('val : ', val);
+    // console.log('val : ', val);
    return new Movie(val);
   })
   // console.log('movie : ', movie);
@@ -96,7 +96,7 @@ app.post('/searchbox',(request,response)=>{
 
   app.post('/selectMovie',(request,response)=>{
     
-    console.log('request.body : ', request.body);
+    // console.log('request.body : ', request.body);
     response.render('../views/pages/details', {data:request.body})
   })
   
