@@ -9,16 +9,16 @@
    <link rel="stylesheet" href="/public/styles/modules.css">
   
 </head>
-<body id="mainOne">
+<body id="mainShow">
     <main>
 
-            <img id="joker" src="../../pics/shia-lebeouf.png">
-            <div class="top-left">Discover and Watch <br/>MOVIES</div>
-            <p id="quotations">“</p>
+            <img id="shia" src="../../pics/shia-lebeouf.png">
+            <div class="top-left-disc">Discover and Watch <br/>MOVIES</div>
+            <p id="quotations-disc">“</p>
             
-        <nav id="navOne"><ul id="listThree"><li><a href="/">Home Page</a></li></ul> 
+        <nav id="navOne-disc"><ul id="listThree-disc"><li><a href="/">Home Page</a></li></ul> 
         
-            <ul id="listOne"><li>
+            <ul id="listOne-disc"><li>
                     <a href="/search">
                     Search
                     </a>
@@ -26,7 +26,7 @@
                  </ul>
                  <!-- </form> -->
                  <!-- <form action="/show"> -->
-                   <ul id="listTwo"><li>
+                   <ul id="listTwo-disc"><li>
                        <a href="/show">
                        My Favorites
                        </a>
@@ -34,27 +34,27 @@
                     </ul></nav>
        
 
-<div id="allMovies">
+<div id="allMovies-disc">
         <%  data.forEach((val)=>{ %>
             <div> <ul>
               <li>
-                <div id="divTwo">
-            <p id="pOne"> <%= val.title %> </p>
-            <p id="lines">____________________________________________________________</p>
-            <div id="images">
-            <p> <img id="imageOne" src="<%= val.poster_path %>" > </p>
+                <div id="divTwo-disc">
+            <p id="pOne-disc"> <%= val.title %> </p>
+            <p id="lines-disc">____________________________________________________________</p>
+            <div id="images-disc">
+            <p> <img id="imageOne-disc" src="<%= val.poster_path %>" > </p>
           </div>
-          <div id="ps">
-            <p id="pTwo">  <%= val.overview %> </p>
-            <p id="lines">____________________________________________________________</p>
+          <div id="ps-disc">
+            <p id="pTwo-disc">  <%= val.overview %> </p>
+            <p id="lines-disc">____________________________________________________________</p>
           
-            <p id="pThree">popularity:<br/><%= val.popularity %> </p>
-          
-          
-            <p id="pFour"> vote average:<br/><%= val.vote_average %> </p>
+            <p id="pThree-disc">popularity:<br/><%= val.popularity %> </p>
           
           
-            <p id="pFive">release date:<br/> <%= val.release_date%></p>
+            <p id="pFour-disc"> vote average:<br/><%= val.vote_average %> </p>
+          
+          
+            <p id="pFive-disc">release date:<br/> <%= val.release_date%></p>
 
             <div>
                     <p>
