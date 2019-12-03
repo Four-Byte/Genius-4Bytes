@@ -8,28 +8,68 @@
    <link rel="stylesheet" href="/public/styles/modules.css">
   
 </head>
-<body>
-
+<body id="body2">
+<header>
         <nav><form action="/">
-            <button>Home Page</button></form></nav>
-    <h1>Discover movies</h1>
-
+            
+            <!-- <nav id="navOne1">
+                    <form action="/search">
+                      <li id="listOne1">
+                       <a href="/search">
+                       Search
+                       </a>
+                      </li>
+                    
+                    </form> 
+                     <form action="/show"> 
+                     <li id="listTwo2">
+                          <a href="/show">
+                          My Favorites
+                          </a>
+                         </li>
+                       
+                       <li id="listThree3">
+                          <a href="/">
+                          Home Page
+                          </a>
+                         </li>
+                       </ul> 
+                    </form>
+                  </nav> 
+                  
     
-<div><p>Disscover The:</p>
+<div> -->
+    </header>
+    <img  id="img1" src="pics/pic1.jpg">
+</div>
+<div>
+        <img id="img2" src="pics/pic2.jpg">
+    </div>
+    <div>
+            <img  id="img3" src="pics/pic3.jpg">
+        </div>
+
+    <div id="mainDiv">
+<div id="div1Two">
+    <!-- <p>Disscover The:</p> -->
 <form action="/dosearches" method="POST">
-    <input type="radio" name="disc" value="popularity"> Most Popular<br>
-    <input type="radio" name="disc" value="revenue"> Box Office <br>
+    Most Popular <input type="radio" name="disc" value="popularity"> <br>
+    Box Office <input type="radio" name="disc" value="revenue"> <br>
     <input type="text" name="year" placeholder="Release date (optional)">
-    <button>Discover</button>
+    <br/>
+    <button id="button1">Discover</button>
 
 </form>
 </div>
 
-<div><p>Search by title:</p>
+<div id="div2Two">
+    <p>Search by title:</p>
 <form action="/searchbox" method="POST">
 <input type="text" name="box" placeholder="Title">
-<button>Search</button>
+<br/>
+<button id="button1">Search</button>
 </form>
+</div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>

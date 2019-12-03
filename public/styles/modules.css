@@ -137,5 +137,92 @@ height:500px;
     color:maroon;
 }
 #divTwo:hover{
-    background-color: rgb(23, 21, 21)
+    background-color: rgb(18, 16, 16)
 }
+#img1{
+    width:100%;
+    height: auto;
+    opacity: 0.6;
+}
+#img2{
+    width:100%;
+    height: auto;
+    opacity: 0.6;
+}#img3{
+    width:100%;
+    height: auto;
+    opacity: 0.6;
+}
+
+#div1Two{
+position: absolute;
+  top: 29%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.776);
+  border-radius: 10px;
+  width:800px;
+  /* height: 100px; */
+  color:rgba(255, 255, 255, 0.797);
+  margin-top:44px;
+  padding:9px;
+text-align: center;
+}
+#div2Two{
+position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.776);
+  border-radius: 10px;
+  /* height: 600px; */
+  width: 800px;
+  color:rgba(255, 255, 255, 0.797);
+  margin-bottom:90px;
+  padding:3px;
+  text-align: center;
+
+
+} 
+#div2Two:hover{
+    background-color: black;
+    transition: 0.5s;
+} 
+#div1Two:hover{
+    background-color: black;
+    transition: 0.5s;
+} 
+
+
+#mainDiv{
+    height:auto;
+   
+}
+
+
+#button1{
+    font-size:15px;
+    border-radius: 3px;
+    background-color: rgb(130, 120, 120);
+    color:white;
+    width:110px;
+    
+
+}
+#button1:hover{
+    background-color: rgb(13, 83, 126);
+    color:black;
+    transition: 0.3s;
+}
+input[type=text]{
+    padding:8px;
+    color:black;
+    border-radius: 3px;
+    width:180px;
+
+}
+

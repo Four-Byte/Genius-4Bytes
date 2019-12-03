@@ -48,7 +48,7 @@ return superagent(url)
 })
 });
 
-// functions handlers 
+// functions handlers.....
 
 app.get('/search',(request,response)=>{
   response.render('../views/pages/search')
@@ -65,14 +65,14 @@ app.post('/dosearches',(request,response)=>{
  if(sort === 'popularity') {url=`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOV_API}&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1`};
  if(sort === 'revenue'){url=`https://api.themoviedb.org/3/discover/movie?api_key=${process.env.MOV_API}&language=en-US&sort_by=revenue.desc.desc&include_adult=false&include_video=false&page=1`};
 if(releaseYear){url+=`&primary_release_year=${releaseYear}`};
-console.log('releaseYear : ', releaseYear);
-console.log('url : ', url);
+// console.log('releaseYear : ', releaseYear);
+// console.log('url : ', url);
   superagent(url)
  .then(data=>{
    let movie=data.body.results;
-   console.log('movie : ', movie);
+  //  console.log('movie : ', movie);
   let movi= movie.map(val=>{
-    console.log('val : ', val);
+    // console.log('val : ', val);
    return new Movie(val);
   })
   // console.log('movie : ', movie);
