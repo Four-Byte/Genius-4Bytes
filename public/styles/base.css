@@ -9,3 +9,9 @@
 
 
 /* background-repeat: no-repeat, repeat; */
+
+#mainShow{
+    /* background-color: rgb(223, 223, 223); */
+    background-color: white;
+    color: white;
+}

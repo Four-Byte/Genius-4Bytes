@@ -96,7 +96,7 @@ app.post('/searchbox',(request,response)=>{
 
   app.post('/selectMovie',(request,response)=>{
     
-    console.log('request.body : ', request.body);
+    // console.log('request.body : ', request.body);
     response.render('../views/pages/details', {data:request.body})
   })
   
