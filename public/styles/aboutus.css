@@ -1,0 +1,158 @@
+/* body of about us page  */
+body{
+    background-image: url('../styles/images/Genius-bytes-logo.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+   
+ } 
+
+ /* body header */
+ body h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px rgb(197, 8, 39);
+    position: relative;
+    background-image: url('../styles/images/Genius-bytes-logo.jpg');
+    background-position: inherit;
+    border: 3px solid black;
+    border-radius: 5px ;
+    margin: 0px auto;
+    /* margin-left: 30px; */
+    padding: 20px;
+}
+
+/* Home page nav  */
+#listThree-aboutus{
+    list-style-type: none;
+    display:inline-block;
+    position: absolute;
+  top: 8px;
+  left: 3px;
+  font-size: 25px;
+}
+/* Footer */
+footer{
+   text-align: center;
+   font-size: xx-large;
+   border: 0.5px solid rgb(197, 11, 11);
+   border-radius: 20px;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;;
+   display: block;
+   min-height: 50px;
+   padding-top: 10px;
+   position: relative;
+   text-shadow: 3px 3px maroon;
+   width: 1330px;
+   position: absolute;
+    right: 10px;
+    background-color: rgb(66, 1, 10);
+    margin: 0px auto;
+ }
+
+ fieldset{
+   text-align: center;
+   font: 28px Papyrus, fantasy;
+   font-size:x-large ;
+   border: 0.5px solid rgb(255, 255, 255);
+   border-radius: 20px;
+   color: black;
+   font: bolder;
+   font-family: monospace;
+   display: block;
+   position: relative;
+   left: 212px;
+   width: 870px;
+   background-repeat: no-repeat, repeat;
+   background-image: url("images/7039.jpg");
+   background-attachment: fixed;
+   background-size: cover;
+ }
+
+ /* header 2  */
+ h2{
+    text-align: center;
+    font-size: x-large;
+    color: rgb(255, 255, 255);
+    text-shadow:3PX 3px rgb(223, 28, 174);
+    font-family: sans-serif;
+       
+ }
+
+ /* Team emails and social media names  */
+ section{
+   text-align: center;
+   border: 0.1px solid black;
+   border-radius: 20px;
+   position: relative;
+   left: 212px;
+   width: 901px;
+   background-image: url("images/7039.jpg");
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   color: rgb(39, 26, 3);
+   font-weight: bolder;
+ }
+
+ /* team section  */
+.container {
+    display: inline-block;
+    font-family: Arial;
+    width: 24.5%;
+ }
+
+ /* team work images */
+ .container img {
+    border-radius: 20%;
+ } 
+ .text-block {
+   position: absolute;
+   bottom: 20px;
+   right: 20px;
+   background-color: black;
+   color: white;
+   padding-left: 20px;
+   padding-right: 20px;
+ }
+#papa{
+   color: rgb(255, 255, 255);
+   font-size: 24px;
+   font-weight: bolder;
+   font: Papyrus, fantasy;
+   text-shadow: 3px 3px maroon;
+
+}
+
+
+#papa2{
+   color: rgb(255, 255, 255);
+   font-size: 16px;
+   font-weight: bolder;
+   font: Papyrus, fantasy;
+   text-shadow: 3px 3px maroon;
+
+
+
+}
+.container2 img {
+   border-radius: 30%;
+   width: 75px;
+   height: 75px;
+} 
+.container2 {
+   display: inline-block;
+   font:  Papyrus, fantasy;
+   width: 20%;
+
+}
+#blu{
+   color: darkcyan;
+   font-weight: bolder;
+   font-size: small;
+}
+#tag{
+   color: darkcyan;
+   font-weight: bolder;
+}

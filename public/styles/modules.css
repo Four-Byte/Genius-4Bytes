@@ -17,7 +17,7 @@
 .top-left{
     position: absolute;
     top: 35%;
-    left: 70%;
+    left: 84%;
     transform: translate(-50%, -50%);
     font-size: 63px;
     font-family: Impact, fantasy;
@@ -59,14 +59,31 @@ ul{
     display:inline-block;
     position: absolute;
   top: 8px;
-  left: 3px;
+  /* left: 3px; */
   font-size: 25px;
+}
+
+#listfour {
+    list-style-type: none;
+    display:inline-block;
+    position: absolute;
+  top: 40px;
+  left: 1200px;
+  font-size: 25px;
+}
+
+#listfour a {
+    color : maroon;
+}
+
+#listfour :hover {
+    color: aqua;
 }
 #quotations{
     font-size:200px;
     position: absolute;
-    top: -5%;
-    left: 55%;
+    top: -36%;
+    left: 70%;
     color:maroon ;
 }
 #imageOne{
@@ -278,9 +295,9 @@ ul{
   top: 8px;
   left: 3px;
   font-size: 25px;
- 
-  
 }
+
+
 #quotations-disc{
     font-size:200px;
     position: absolute;
