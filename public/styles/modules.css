@@ -150,10 +150,10 @@ position: absolute;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.776);
   border-radius: 10px;
-  width:800px;
+  width:750px;
   /* height: 100px; */
   color:rgba(255, 255, 255, 0.797);
-  margin-top:44px;
+  margin-top:42px;
   padding:9px;
 text-align: center;
 }
