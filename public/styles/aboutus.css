@@ -137,9 +137,6 @@ footer{
    font-weight: bolder;
    font: Papyrus, fantasy;
    text-shadow: 3px 3px maroon;
-
-
-
 }
 .container2 img {
    border-radius: 30%;
@@ -160,4 +157,12 @@ footer{
 #tag{
    color: maroon;
    font-weight: bolder;
+}
+
+#tag:hover {
+    color: rgb(5, 145, 145);
+}
+
+#blu:hover {
+    color: rgb(5, 145, 145);
 }
