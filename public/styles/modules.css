@@ -181,6 +181,7 @@ text-align: center;
 #div2Two{
 position: absolute;
   top: 62%;
+
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
