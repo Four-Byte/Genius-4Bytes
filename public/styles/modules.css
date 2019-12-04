@@ -17,7 +17,7 @@
 .top-left{
     position: absolute;
     top: 35%;
-    left: 70%;
+    left: 84%;
     transform: translate(-50%, -50%);
     font-size: 63px;
     font-family: Impact, fantasy;
@@ -59,14 +59,31 @@ ul{
     display:inline-block;
     position: absolute;
   top: 8px;
-  left: 3px;
+  /* left: 3px; */
   font-size: 25px;
+}
+
+#listfour {
+    list-style-type: none;
+    display:inline-block;
+    position: absolute;
+  top: 40px;
+  left: 1200px;
+  font-size: 25px;
+}
+
+#listfour a {
+    color : maroon;
+}
+
+#listfour :hover {
+    color: aqua;
 }
 #quotations{
     font-size:200px;
     position: absolute;
-    top: -5%;
-    left: 55%;
+    top: -19%;
+    left: 70%;
     color:maroon ;
 }
 #imageOne{
@@ -87,6 +104,7 @@ ul{
     /* float: left; */
     margin-top: 20px;
     margin-left:15px;
+    padding-top: 10px;
 }
 #pTwo{
     font-size:20px;
@@ -102,14 +120,17 @@ ul{
 #pThree{
     font-size:15px;
     text-align: left;
+    padding-left: 10px;
 }
 #pFour{
     font-size:15px;
     text-align: left;
+    padding-left: 10px;
 }
 #pFive{
     font-size:15px;
    text-align: left;
+   padding-left: 10px;
 }
 #divTwo{
     text-align: left;
@@ -150,16 +171,17 @@ position: absolute;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.776);
   border-radius: 10px;
-  width:800px;
+  width:750px;
   /* height: 100px; */
   color:rgba(255, 255, 255, 0.797);
-  margin-top:44px;
+  margin-top:42px;
   padding:9px;
 text-align: center;
 }
 #div2Two{
 position: absolute;
-  top: 55%;
+  top: 62%;
+
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 30px;
@@ -167,7 +189,7 @@ position: absolute;
   background-color: rgba(0, 0, 0, 0.776);
   border-radius: 10px;
   /* height: 600px; */
-  width: 800px;
+  width: 750px;
   color:rgba(255, 255, 255, 0.797);
   margin-bottom:90px;
   padding:3px;
@@ -278,9 +300,9 @@ ul{
   top: 8px;
   left: 3px;
   font-size: 25px;
- 
-  
 }
+
+
 #quotations-disc{
     font-size:200px;
     position: absolute;
@@ -307,7 +329,7 @@ ul{
     /* float: left; */
     margin-top: 20px;
     margin-left:15px;
-
+    padding-top: 10px;
     
 }
 #pTwo-disc{
@@ -324,17 +346,18 @@ ul{
 #pThree-disc{
     font-size:15px;
     text-align: left;
+    padding-left: 10px;
    
 }
 #pFour-disc{
     font-size:15px;
     text-align: left;
-   
+    padding-left: 10px;
 }
 #pFive-disc{
     font-size:15px;
    text-align: left;
-   
+   padding-left: 10px;
 }
 #divTwo-disc{
     text-align: left;
@@ -343,7 +366,7 @@ ul{
  /* border-radius: 30px; */
 background-color: black;
 width:90%;
-height:500px;
+height:600px;
 border-radius: 20px;
 }
 #lines-disc{
@@ -368,7 +391,8 @@ border-radius: 20px;
 	font-weight:bold;
 	padding:12px 16px;
 	text-decoration:none;
-	text-shadow:0px 1px 0px #ffffff;
+    text-shadow:0px 1px 0px #ffffff;
+    margin-top: 0px;
 }
 #button-disc:hover {
 	background-color:#ccc2a6;
@@ -512,3 +536,21 @@ border-radius: 20px;
 
     background-color: white;
 }
+/* Footer */
+footer{
+   text-align: center;
+   font-size: xx-large;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;;
+   display: block;
+   min-height: 50px;
+   padding-top: 10px;
+   text-shadow: 3px 3px maroon;
+   width: 100%;
+   position: absolute;
+    right: 1px;
+    background-color: rgb(66, 1, 10);
+    margin: 0px auto;
+ }
+
+
