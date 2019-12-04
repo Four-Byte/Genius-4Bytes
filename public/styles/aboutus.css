@@ -67,10 +67,11 @@ footer{
    font-family: monospace;
    display: block;
    position: relative;
-   left: 212px;
+   left: 260px;
    width: 870px;
    background-repeat: no-repeat, repeat;
    background-image: url("/pics/pexel.jpeg");
+   
    background-attachment: fixed;
    background-size: cover;
  }
@@ -91,7 +92,7 @@ footer{
    border: 0.1px solid black;
    border-radius: 20px;
    position: relative;
-   left: 212px;
+   left: 265px;
    width: 901px;
    background-image: url("/pics/pexel.jpeg");
    background-repeat: no-repeat;
