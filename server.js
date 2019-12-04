@@ -77,9 +77,11 @@ if(releaseYear){url+=`&primary_release_year=${releaseYear}`};
   //  console.log('movie : ', movie);
   let movi= movie.map(val=>{
     // console.log('val : ', val);
-   return new Movie(val);
+   let moviesConst= new Movie(val);
+    // console.log('movies : ', movi)
+    return moviesConst;
+
   })
-  // console.log('movie : ', movie);
   response.render('../views/pages/result',{data:movi})
 })
 });
@@ -91,9 +93,10 @@ app.post('/searchbox',(request,response)=>{
   .then(data=>{
     let movie=data.body.results;
     let movi= movie.map(val=>{
-     return new Movie(val);
+    let  moviesConst= new Movie(val)
+     return moviesConst;
     })
-    // console.log('movie : ', movie);
+    // console.log('moviesConst : ', moviesConst);
     response.render('../views/pages/result',{data:movi})
   })
   });
@@ -147,6 +150,7 @@ function Movie(movi){
   this.popularity=movi.popularity;
   this.vote_average=movi.vote_average;
   this.release_date=movi.release_date;
+  this.id=movi.id;
 
 }
 

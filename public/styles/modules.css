@@ -180,7 +180,7 @@ text-align: center;
 }
 #div2Two{
 position: absolute;
-  top: 62%;
+  top: 55%;
 
   left: 50%;
   transform: translate(-50%, -50%);
@@ -552,5 +552,8 @@ footer{
     background-color: rgb(66, 1, 10);
     margin: 0px auto;
  }
-
-
+ #navFav a{
+    color:  rgba(255,255,255,0.5);
+    text-decoration: none;
+    position: fixed;
+}
