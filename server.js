@@ -25,6 +25,10 @@ app.use(methodOverride((request, response) => {
   }
 }))
 
+// About us page 
+app.get('/aboutus',(request,response)=>{
+  response.render('../aboutus')
+})
 
 // Database Connection Setup
 const client = new pg.Client(process.env.DATABASE_URL);
