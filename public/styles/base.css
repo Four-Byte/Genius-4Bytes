@@ -15,3 +15,7 @@
     background-color: white;
     color: white;
 }
+#favbody{
+    /* background-color:rgba(28, 28, 28, 0.906); */
+    background:radial-gradient(#02041f90,  rgb(18, 14, 58)) fixed;
+}
