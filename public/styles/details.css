@@ -147,3 +147,17 @@ border-radius: 20px;
         position:relative;
         top:1px;
     }
+
+    #trailer{
+        position: absolute;
+        right: 300px;
+        top: 0;
+        width: 330px;
+        height: 250;
+        float: right;
+        /* margin-top: -370px; */
+        /* margin: 0 auto; */
+    }
+    #divTwo-det{
+        position: relative;
+    }
