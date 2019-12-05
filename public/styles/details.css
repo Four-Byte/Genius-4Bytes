@@ -76,8 +76,8 @@ ul{
     margin: 15 auto;
 }
 #pOne-det{
-    font-size:30px;
-    font-family: Impact, fantasy;
+    font-size:37px;
+    font-family: Optima, sans-serif;
     font-weight: 900;
     text-align: left;
     /* float: left; */
@@ -85,27 +85,33 @@ ul{
     margin-left:15px;
 }
 #pTwo-det{
-    font-size:20px;
+    font-size:25px;
    text-align: left;
    color:rgba(247, 247, 247, 0.769);
    overflow: hidden;
    text-overflow: ellipsis;
    white-space: initial;
-   width:500px;
+   width:900px;
    text-indent: 25px;
    margin-left:15px;
 }
 #pThree-det{
-    font-size:15px;
+    font-size:25px;
     text-align: left;
+    display:inline-block;
+    padding:10px;
 }
 #pFour-det{
-    font-size:15px;
+    font-size:25px;
     text-align: left;
+    display:inline-block;
+    padding:10px;
 }
 #pFive-det{
-    font-size:15px;
+    font-size:25px;
    text-align: left;
+   display:inline-block;
+   padding:10px;
 }
 #divTwo-det{
     text-align: left;
@@ -149,11 +155,12 @@ border-radius: 20px;
 
     #trailer{
         position: absolute;
-        right: 300px;
+        right: 400px;
         top: 0;
         width: 330px;
         height: 250;
         float: right;
+        
         /* margin-top: -370px; */
         /* margin: 0 auto; */
     }

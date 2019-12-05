@@ -53,6 +53,7 @@ ul{
     top: 8px;
     left: 180px;
    font-size: 25px;
+   width:40%;
 }
 #listThree{
     list-style-type: none;
@@ -68,7 +69,7 @@ ul{
     display:inline-block;
     position: absolute;
   top: 40px;
-  left: 1200px;
+  left: 1450px;
   font-size: 25px;
 }
 
@@ -82,7 +83,7 @@ ul{
 #quotations{
     font-size:200px;
     position: absolute;
-    top: -19%;
+    top: -6%;
     left: 70%;
     color:maroon ;
 }
@@ -97,40 +98,44 @@ ul{
     margin: 15 auto;
 }
 #pOne{
-    font-size:30px;
+    font-size:51px;
     font-family: Impact, fantasy;
     font-weight: 900;
     text-align: left;
-    /* float: left; */
-    margin-top: 20px;
-    margin-left:15px;
-    padding-top: 10px;
+   margin-top: -16px;
+    margin-left:16px;
+    padding-top: 11px;
+    margin-bottom: 10px;
 }
 #pTwo{
-    font-size:20px;
+    font-size:36px;
    text-align: left;
    color:rgba(247, 247, 247, 0.769);
    overflow: hidden;
    text-overflow: ellipsis;
    white-space: initial;
-   width:500px;
+   width:70%;
    text-indent: 25px;
    margin-left:15px;
+   margin-bottom: 5px;
 }
 #pThree{
-    font-size:15px;
+    font-size:26px;
     text-align: left;
     padding-left: 10px;
+    display: inline-block;
 }
 #pFour{
-    font-size:15px;
+    font-size:26px;
+    display: inline-block;
     text-align: left;
     padding-left: 10px;
 }
 #pFive{
-    font-size:15px;
+    font-size:26px;
    text-align: left;
    padding-left: 10px;
+   display: inline-block;
 }
 #divTwo{
     text-align: left;
@@ -249,7 +254,7 @@ input[type=text]{
 
 .top-left-disc{
     position: absolute;
-    top: 38%;
+    top: 30%;
     left: 83%;
     transform: translate(-50%, -50%);
     font-size: 63px;
@@ -306,8 +311,8 @@ ul{
 #quotations-disc{
     font-size:200px;
     position: absolute;
-    top: -12%;
-    left: 68%;
+    top: -6%;
+    left: 69%;
     color:maroon ;
 }
 #imageOne-disc{
@@ -322,8 +327,8 @@ ul{
     
 }
 #pOne-disc{
-    font-size:30px;
-    font-family: Impact, fantasy;
+    font-size:37px;
+    font-family: Optima, sans-serif;
     font-weight: 900;
     text-align: left;
     /* float: left; */
@@ -333,31 +338,34 @@ ul{
     
 }
 #pTwo-disc{
-    font-size:20px;
+    font-size:24px;
    text-align: left;
    color:rgba(247, 247, 247, 0.769);
    overflow: hidden;
    text-overflow: ellipsis;
    white-space: initial;
-   width:500px;
+   width:900px;
    text-indent: 25px;
    margin-left:15px;
 }
 #pThree-disc{
-    font-size:15px;
+    font-size:25px;
     text-align: left;
     padding-left: 10px;
+    display:inline-block;
    
 }
 #pFour-disc{
-    font-size:15px;
+    font-size:25px;
     text-align: left;
     padding-left: 10px;
+    display:inline-block;
 }
 #pFive-disc{
-    font-size:15px;
+    font-size:25px;
    text-align: left;
    padding-left: 10px;
+   display:inline-block;
 }
 #divTwo-disc{
     text-align: left;
@@ -414,10 +422,10 @@ border-radius: 20px;
     /* float: left; */
     /* margin-top: -350px; */
     width:1440px;
-    height:700px;
+    height:900px;
     /* top:450px; */
     /* right:20px; */
-    margin-top:5px;
+    margin-top:10px;
 }
  /* #coloredDiv1{ */
     /* background-color: rgb(30, 28, 133); */
@@ -479,22 +487,22 @@ border-radius: 20px;
     margin: 15 auto;
 } */
 #favloopedpic{
-    margin-top: 40px;
+    margin-top: 60px;
     float: right;
     border-radius: 6px;
     margin-right:280px;
-    width: 200px;
+    width: 267px;
     height: auto;
-    margin: 15 auto;
+    /* margin: 15 auto; */
 }
 #para1{
-    font-size:20px;
+    font-size:30px;
    text-align: left;
    color:rgba(247, 247, 247, 0.769);
    overflow: hidden;
    text-overflow: ellipsis;
    white-space: initial;
-   width:500px;
+   width:900px;
    text-indent: 25px;
    margin-left:250px;
   }
@@ -505,6 +513,7 @@ border-radius: 20px;
     margin-top: 70px;
     margin-left:220px;
     margin-bottom: 100px;
+  
     
    
 }
